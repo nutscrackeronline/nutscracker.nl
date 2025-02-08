@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutscracker.nl - Binnenkort Online</title>
+    <style>
+        /* Algemene stijlen */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4E1C1;
+            color: #6E4B3A; /* Bruine tekst */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            background-color: #2C6B3F; /* Donkergroene achtergrond */
+            color: white; /* Witte tekst */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Hoofdinhoud */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Watermerk */
+        .watermerk {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1;
+            z-index: -1;
+            max-width: 50%;
+        }
+
+        /* Binnenkort tekst */
+        .binnenkort {
+            font-size: 2.5rem;
+            color: #6E4B3A; /* Bruine kleur */
+            margin: 2rem 0;
+            font-weight: bold;
+        }
+
+        /* Contactinfo */
+        .contact-info {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #6E4B3A; /* Bruine kleur */
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2C6B3F; /* Donkergroene achtergrond */
+            color: white; /* Witte tekst */
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .binnenkort {
+                font-size: 1.8rem;
+            }
+            
+            .watermerk {
+                max-width: 80%;
+            }
+            
+            .contact-info {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .binnenkort {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Nutscracker.nl</h1>
+    </header>
+
+    <main class="main-content">
+        <img src="logo.png" alt="Watermerk" class="watermerk">
+        <div class="binnenkort">
+            Binnenkort Online
+        </div>
+        <div class="contact-info">
+            Voor meer info via WhatsApp:<br>
+            06-35641566
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Nutscracker.nl - Alle rechten voorbehouden</p>
+    </footer>
+</body>
+</html>
